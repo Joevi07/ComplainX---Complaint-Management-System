@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ComplainX - UserLogin</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/style.css'>
+</head>
+
+<body>
+    <div class="login-container">
+    <h1>SIGN UP</h1>
+      <form class="login-contents" action="SignupServlet" method="post">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="email" name="email" placeholder="Email ID" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="hidden" name="role" id="roleField">
+      <button type="submit">SignUp</button>
+      <p>Already have an account? <a href="Login.html">Login</a></p>
+
+    </form>
+    </div>
+    <script>
+        document.getElementById("roleField").value = localStorage.getItem("role");
+    </script>
+</body>
+</html>

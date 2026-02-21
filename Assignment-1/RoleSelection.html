@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ComplainX - RoleSelection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        /* overflow: hidden; */
+        font-family:
+          "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+          Arial, sans-serif;
+      }
+      .role-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+      }
+
+      .admin-container,
+      .user-container {
+        display: flex;
+        background-color: rgba(222, 186, 218, 0.6);
+        gap: 150px;
+        padding: 50px;
+        border-radius: 50px;
+        margin-bottom: 70px;
+      }
+
+      .admin-container:hover,.user-container:hover{
+        transform: translateY(-10px);
+      }
+      .admin-container img,
+      .user-container img {
+        width: 160px;
+        height:auto;
+      }
+
+      button {
+        font-size: 50px;
+        padding: 20px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="role-container">
+      <h1 style="font-size: 50px; text-align: center;margin-bottom: 10px;">Welcome to ComplainX</h1>
+      <h2 style="font-size: 30px; text-align: center;margin-bottom: 30px;">Choose Your Role</h2>
+
+      <div class="admin-container">
+        <img src="assets/admin.png" />
+        <button onclick="selectRole('admin')">ADMIN</button>
+      </div>
+
+      <div class="user-container">
+        <button onclick="selectRole('user')">USER</button>
+        <img src="assets/user.png" />
+      </div>
+    </div>
+
+    <script>
+      function selectRole(role)
+      {
+        localStorage.setItem('role',role);
+        window.location.href = 'Login.html'
+      }
+    </script>
+  </body>
+</html>

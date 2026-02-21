@@ -1,0 +1,83 @@
+
+ body{
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Purple Gradient Background */
+    background: linear-gradient(135deg,#6a11cb,#2575fc);
+}
+
+/* Container */
+.login-container{
+    text-align:center;
+    color:white;
+}
+
+/* Glass Card */
+.login-contents{
+    width:380px;
+    padding:40px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,0.3);
+    box-shadow:0 0 25px rgba(0,0,0,0.3);
+}
+
+/* Inputs */
+.login-contents input{
+    height:50px;
+    width:90%;
+    border:none;
+    outline:none;
+    border-radius:25px;
+    padding:0 15px;
+    background: rgba(255,255,255,0.25);
+    color:white;
+    font-size:14px;
+}
+
+.login-contents input::placeholder{
+    color:white;
+    opacity:0.8;
+}
+
+
+/* Button */
+.login-contents button{
+    height:45px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#6a11cb;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+    width:100px;
+    align-self: center;
+}
+
+.login-contents button:hover{
+    background:#eee;
+}
+
+/* Register text */
+.login-contents p{
+    font-size:14px;
+    margin-top:10px;
+}
+
+.login-contents a{
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
