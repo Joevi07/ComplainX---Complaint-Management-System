@@ -4,9 +4,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnection {
-    private static final String URL = "jdbc:mysql://localhost:3306/complaint_system"; // your DB URL
-    private static final String USER = "root"; // your DB username
-    private static final String PASSWORD = "mariya@!joevita7"; // your DB password
+    private static final String URL = ""; // your DB URL
+    private static final String USER = ""; // your DB username
+    private static final String PASSWORD = ""; // your DB password
 
     public static Connection getConnection() {
         Connection conn = null;
@@ -23,4 +23,5 @@ public class DBConnection {
         return conn;
     }
 }
+
 
